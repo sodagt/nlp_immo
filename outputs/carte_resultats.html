@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_4de95fa1c12aa67d1d9e32d380675074 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_4de95fa1c12aa67d1d9e32d380675074" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_4de95fa1c12aa67d1d9e32d380675074 = L.map(
+                "map_4de95fa1c12aa67d1d9e32d380675074",
+                {
+                    center: [45.67337463871955, 4.885635662378914],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 12,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_fb3d95f65d43aa765a3a8776ca9795cd = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_fb3d95f65d43aa765a3a8776ca9795cd.addTo(map_4de95fa1c12aa67d1d9e32d380675074);
+        
+    
+            var marker_cluster_72c733b2949d75d191d845858884102c = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var marker_f9fefafd928696d040ed98a7ccad045c = L.marker(
+                [45.628170972315274, 4.9340444334453615],
+                {
+}
+            ).addTo(marker_cluster_72c733b2949d75d191d845858884102c);
+        
+    
+        var popup_4151de2f4883b647e2447fe1a4dfe42c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb36d0c3f55784295cb0f56713ca2416 = $(`<div id="html_eb36d0c3f55784295cb0f56713ca2416" style="width: 100.0%; height: 100.0%;">Appartement • 60,95 m² • 3 pièces • 2 chambres - 278000.0 €</div>`)[0];
+                popup_4151de2f4883b647e2447fe1a4dfe42c.setContent(html_eb36d0c3f55784295cb0f56713ca2416);
+            
+        
+
+        marker_f9fefafd928696d040ed98a7ccad045c.bindPopup(popup_4151de2f4883b647e2447fe1a4dfe42c)
+        ;
+
+        
+    
+    
+            var marker_c5f8a1e3c201ead999bb17f82fcb9113 = L.marker(
+                [45.58269261838876, 4.734420575628028],
+                {
+}
+            ).addTo(marker_cluster_72c733b2949d75d191d845858884102c);
+        
+    
+        var popup_3155c2adb884f1344692c2ce59171713 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e48a07b803bd84bbf113b8df8a79e989 = $(`<div id="html_e48a07b803bd84bbf113b8df8a79e989" style="width: 100.0%; height: 100.0%;">Appartement • 54,75 m² • 3 pièces • 2 chambres - 208000.0 €</div>`)[0];
+                popup_3155c2adb884f1344692c2ce59171713.setContent(html_e48a07b803bd84bbf113b8df8a79e989);
+            
+        
+
+        marker_c5f8a1e3c201ead999bb17f82fcb9113.bindPopup(popup_3155c2adb884f1344692c2ce59171713)
+        ;
+
+        
+    
+    
+            var marker_f124552b1abef72743ee6030ed86ffad = L.marker(
+                [45.65614778812122, 4.97902843432282],
+                {
+}
+            ).addTo(marker_cluster_72c733b2949d75d191d845858884102c);
+        
+    
+        var popup_aa0527a16c051833173c18c4b885c7a2 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_dc2779ce1a4aeab6aea59c07a0b2fd86 = $(`<div id="html_dc2779ce1a4aeab6aea59c07a0b2fd86" style="width: 100.0%; height: 100.0%;">Appartement • 62 m² • 2 pièces • 1 chambre - 179000.0 €</div>`)[0];
+                popup_aa0527a16c051833173c18c4b885c7a2.setContent(html_dc2779ce1a4aeab6aea59c07a0b2fd86);
+            
+        
+
+        marker_f124552b1abef72743ee6030ed86ffad.bindPopup(popup_aa0527a16c051833173c18c4b885c7a2)
+        ;
+
+        
+    
+    
+            var marker_1f765741f7d0d169edd9b91b93e8b1b0 = L.marker(
+                [45.826487176052936, 4.895049206119444],
+                {
+}
+            ).addTo(marker_cluster_72c733b2949d75d191d845858884102c);
+        
+    
+        var popup_377335e38bd6f2a20108e40b9fb410f1 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_724d5801ccb1469cef042259c0a638b5 = $(`<div id="html_724d5801ccb1469cef042259c0a638b5" style="width: 100.0%; height: 100.0%;">Appartement • 60 m² • 3 pièces • 2 chambres - 188000.0 €</div>`)[0];
+                popup_377335e38bd6f2a20108e40b9fb410f1.setContent(html_724d5801ccb1469cef042259c0a638b5);
+            
+        
+
+        marker_1f765741f7d0d169edd9b91b93e8b1b0.bindPopup(popup_377335e38bd6f2a20108e40b9fb410f1)
+        ;
+
+        
+    
+    
+            marker_cluster_72c733b2949d75d191d845858884102c.addTo(map_4de95fa1c12aa67d1d9e32d380675074);
+        
+</script>
+</html>

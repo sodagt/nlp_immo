@@ -1,0 +1,40 @@
+
+digraph {
+    // Styles des nœuds
+    node [fontname="Helvetica"]
+
+    // Utilisateur
+    U [label="Utilisateur", shape=ellipse, style=filled, fillcolor=lightblue]
+
+    // Requête et analyse
+    Q [label="Requête", shape=rectangle, style=filled, fillcolor=lightyellow]
+    A [label="Analyse de la requête
+(choix des outils)", shape=rectangle, style=filled, fillcolor=lightyellow]
+    F [label="Filtrage récursif par LLM", shape=rectangle, style=filled, fillcolor=lightyellow]
+
+    // Outils
+    S [label="summary_tool
+(Résumé texte)", shape=diamond, style=filled, fillcolor=lightgreen]
+    M [label="map_tool
+(Carte interactive)", shape=diamond, style=filled, fillcolor=lightgreen]
+    C [label="csv_tool
+(Export CSV)", shape=diamond, style=filled, fillcolor=lightgreen]
+
+    // Résultat final
+    R [label="Résultat final
+- Texte résumé
+- Carte HTML
+- CSV
+- Nb annonces filtrées", shape=rectangle, style=filled, fillcolor=lightpink]
+
+    // Flèches
+    U -> Q
+    Q -> A
+    A -> F
+    F -> S [label="si summary sélectionné"]
+    F -> M [label="si map sélectionné"]
+    F -> C [label="si CSV sélectionné"]
+    S -> R
+    M -> R
+    C -> R
+}
